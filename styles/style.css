@@ -1,0 +1,10 @@
+.flex_spaces {
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+.answer_span {
+    margin-right: 5px;
+    font-size: xx-large;
+    display: inline;
+}

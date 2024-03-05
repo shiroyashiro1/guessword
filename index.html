@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Guess the Word</title>
+</head>
+<body>
+    <div id="control_panel">
+        <label for="letters_number_in_word">Количество букв в слове (3-20)</label>
+        <input name="letters_number_in_word" type="number" value="5" min="3" max="20"/>
+        <label for="chance_number_to_guess">Количество букв в слове (4-20)</label>
+        <input name="chance_number_to_guess" type="number" value="6" min="4" max="20"/>
+        <button type="button" onclick="parameters_registration()">Установить настройки</button>
+    </div>
+    <div id="box_input_answer">
+        <p id="notification_text"></p>
+        <label for="answer_word">Введите слово: </label>
+        <input name="answer_word" type="text" />
+        <button type="button" onclick="check_word()">Проверить</button>
+    </div>
+    <div id="box_output_answer">
+        <h1 id="congratulation_header"></h1>
+        <p id="display_definition"></p>
+        <ol id="chanses_list">
+            <li class="flex_spaces"></li>
+        </ol>
+    </div>
+</body>
+</html>
